@@ -84,8 +84,11 @@ namespace Oficina_Flavia.Views
             Cliente cliente = ClienteDAO.BuscarPorId(idC);
             int idF = (int)cboFuncionario.SelectedValue;
             Funcionario funcionario = FuncionarioDAO.BuscarPorId(idF);
+            int idCr = (int)cboCarros.SelectedValue;
+            Carro carro = CarroDAO.BuscarPorId(idCr);
             conserto.Cliente = cliente;
             conserto.Funcionario = funcionario;
+            conserto.Carro = carro;
             conserto.DataEntrada = DateTime.Now;
             conserto.DataRetorno = dataSaida.SelectedDate.Value.Date;
             ConsertoDAO.Cadastrar(conserto);
@@ -96,8 +99,11 @@ namespace Oficina_Flavia.Views
         private void btnBuscarCarro_Click(object sender, RoutedEventArgs e)
         {
             int idC = (int)cboCliente.SelectedValue;
-            List<Carro> carros = CarroDAO.ListarPorCliente(idC);
+            List<Carro> carros = CarroDAO.ListarPorCliente(idC); 
             cboCarros.ItemsSource = carros;
+            cboServicos.DisplayMemberPath = "Placa";
+            cboServicos.SelectedValuePath = "Id";
+
         }
     }
 }

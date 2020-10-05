@@ -5,26 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Oficina_Flavia.Views"
         mc:Ignorable="d"
-         Title="Oficina Flavia - Funcionario" Height="310" Width="300" WindowStartupLocation="CenterScreen">
+         Title="Oficina da Flavia - Funcionarios" Height="360" Width="300" WindowStartupLocation="CenterScreen" Background="#FF082321">
     <Grid>
-        <Label Content="Nome" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="76,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="0"/>
-        <Label Content="CPF" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Margin="76,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="1"/>
-        <Label Content="Endereço" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Margin="76,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="2"/>
-        <Label Content="Telefone" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Margin="76,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="3"/>
-        <Label Content="Cargo" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCargo" HorizontalAlignment="Left" Margin="76,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="4"/>
-        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="216,243,0,0" VerticalAlignment="Top" x:Name="btnCadastrarFuncionario" Click="btnCadastrarFuncionario_Click" TabIndex="5" />
-        <Label Content="ID" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="76,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" IsEnabled="False"/>
-        <Label Content="Criado em" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCriadoEm" HorizontalAlignment="Left" Margin="76,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" IsEnabled="False"/>
-        <Button x:Name="btnBuscarFuncionario" Content="Buscar" HorizontalAlignment="Left" Margin="172,243,0,0" VerticalAlignment="Top" Click="btnBuscarFuncionario_Click" TabIndex="6"/>
-        <Button x:Name="btnLimparFuncionario" Content="Limpar" HorizontalAlignment="Left" Margin="128,243,0,0" VerticalAlignment="Top" Click="btnLimparFuncionario_Click" TabIndex="7"/>
-        <Button x:Name="btnAlterarFuncionario" Content="Alterar" HorizontalAlignment="Left" Margin="84,243,0,0" VerticalAlignment="Top" Click="btnAlterarFuncionario_Click" TabIndex="8"/>
-        <Button x:Name="btnRemoverFuncionario" Content="Remover" HorizontalAlignment="Left" Margin="28,243,0,0" VerticalAlignment="Top" Click="btnRemoverFuncionario_Click" TabIndex="9"/>
+        <Label Content="Funcionários" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Century725 Cn BT" FontSize="26" Foreground="White"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="17,95,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="97,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" TabIndex="0" FontFamily="Segoe UI Semilight"/>
+        <Label Content="CPF" HorizontalAlignment="Left" Margin="17,129,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Margin="97,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" TabIndex="1" FontFamily="Segoe UI Semilight"/>
+        <Label Content="Endereço" HorizontalAlignment="Left" Margin="17,157,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Margin="97,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" TabIndex="2" FontFamily="Segoe UI Semilight"/>
+        <Label Content="Telefone" HorizontalAlignment="Left" Margin="17,190,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Margin="97,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" TabIndex="3" FontFamily="Segoe UI Semilight"/>
+        <Label Content="Cargo" HorizontalAlignment="Left" Margin="17,223,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtCargo" HorizontalAlignment="Left" Margin="97,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" TabIndex="4" FontFamily="Segoe UI Semilight"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="225,300,0,0" VerticalAlignment="Top" x:Name="btnCadastrarFuncionario" Click="btnCadastrarFuncionario_Click" TabIndex="5" FontFamily="Georgia" FontSize="13" />
+        <Label Content="ID" HorizontalAlignment="Left" Margin="17,64,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="97,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
+        <Label Content="Criado em" HorizontalAlignment="Left" Margin="17,255,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtCriadoEm" HorizontalAlignment="Left" Margin="97,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
+        <Button x:Name="btnBuscarFuncionario" Content="Buscar" HorizontalAlignment="Left" Margin="178,300,0,0" VerticalAlignment="Top" Click="btnBuscarFuncionario_Click" TabIndex="6" FontFamily="Georgia" FontSize="13"/>
+        <Button x:Name="btnLimparFuncionario" Content="Limpar" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Click="btnLimparFuncionario_Click" TabIndex="7" FontFamily="Georgia" FontSize="13"/>
+        <Button x:Name="btnAlterarFuncionario" Content="Alterar" HorizontalAlignment="Left" Margin="77,300,0,0" VerticalAlignment="Top" Click="btnAlterarFuncionario_Click" TabIndex="8" FontFamily="Georgia" FontSize="13"/>
+        <Button x:Name="btnRemoverFuncionario" Content="Remover" HorizontalAlignment="Left" Margin="17,300,0,0" VerticalAlignment="Top" Click="btnRemoverFuncionario_Click" TabIndex="9" FontFamily="Georgia" FontSize="13"/>
     </Grid>
 </Window>

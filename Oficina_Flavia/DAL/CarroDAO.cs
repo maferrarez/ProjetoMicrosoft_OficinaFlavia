@@ -12,7 +12,7 @@ namespace Oficina_Flavia.DAL
 
         public static Carro BuscarPorPlaca(string placa) => _context.Carros.FirstOrDefault(x => x.Placa == placa);
         public static Carro BuscarPorId(int id) => _context.Carros.FirstOrDefault(x => x.Id == id);
-        public static List<Carro> ListarPorCliente(int idCliente) => (List<Carro>)_context.Carros.Where(x => x.Dono.Id == idCliente);
+        public static List<Carro> ListarPorCliente(int idCliente) => _context.Carros.Where(x => x.Dono.Id == idCliente).ToList();
 
         public static bool Cadastrar(Carro carro)
         {
