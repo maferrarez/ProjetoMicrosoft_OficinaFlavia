@@ -1,0 +1,30 @@
+﻿<Window x:Class="Oficina_Flavia.Views.frmCadastrarFuncionario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oficina_Flavia.Views"
+        mc:Ignorable="d"
+         Title="Oficina Flavia - Funcionario" Height="310" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="76,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="0"/>
+        <Label Content="CPF" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Margin="76,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="1"/>
+        <Label Content="Endereço" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Margin="76,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="2"/>
+        <Label Content="Telefone" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Margin="76,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="3"/>
+        <Label Content="Cargo" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCargo" HorizontalAlignment="Left" Margin="76,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" TabIndex="4"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="216,243,0,0" VerticalAlignment="Top" x:Name="btnCadastrarFuncionario" Click="btnCadastrarFuncionario_Click" TabIndex="5" />
+        <Label Content="ID" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="76,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" IsEnabled="False"/>
+        <Label Content="Criado em" HorizontalAlignment="Left" Margin="10,211,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCriadoEm" HorizontalAlignment="Left" Margin="76,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" IsEnabled="False"/>
+        <Button x:Name="btnBuscarFuncionario" Content="Buscar" HorizontalAlignment="Left" Margin="172,243,0,0" VerticalAlignment="Top" Click="btnBuscarFuncionario_Click" TabIndex="6"/>
+        <Button x:Name="btnLimparFuncionario" Content="Limpar" HorizontalAlignment="Left" Margin="128,243,0,0" VerticalAlignment="Top" Click="btnLimparFuncionario_Click" TabIndex="7"/>
+        <Button x:Name="btnAlterarFuncionario" Content="Alterar" HorizontalAlignment="Left" Margin="84,243,0,0" VerticalAlignment="Top" Click="btnAlterarFuncionario_Click" TabIndex="8"/>
+        <Button x:Name="btnRemoverFuncionario" Content="Remover" HorizontalAlignment="Left" Margin="28,243,0,0" VerticalAlignment="Top" Click="btnRemoverFuncionario_Click" TabIndex="9"/>
+    </Grid>
+</Window>

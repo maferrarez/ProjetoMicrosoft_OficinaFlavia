@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\frmCadastrarCarro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\frmCadastrarCliente.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\frmCadastrarConserto.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\frmCadastrarFuncionario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\frmCadastrarServico.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\frmPrincipal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\frmCadastrarCarro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\frmCadastrarCliente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\frmCadastrarConserto.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\frmCadastrarFuncionario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\frmCadastrarServico.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\frmPrincipal.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

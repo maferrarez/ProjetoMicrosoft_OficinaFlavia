@@ -1,0 +1,9 @@
+﻿<Application x:Class="Oficina_Flavia.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Oficina_Flavia"
+             StartupUri="Views/frmPrincipal.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

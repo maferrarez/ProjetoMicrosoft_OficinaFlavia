@@ -1,0 +1,34 @@
+﻿<Window x:Class="Oficina_Flavia.Views.frmCadastrarConserto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oficina_Flavia.Views"
+        mc:Ignorable="d"
+        Title="Cadastrar Conserto" Height="572" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Conserto" HorizontalAlignment="Left" Margin="167,16,0,0" VerticalAlignment="Top" Height="34"/>
+        <Label Content="Funcionario" HorizontalAlignment="Left" Margin="77,48,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cboFuncionario" HorizontalAlignment="Left" Margin="53,80,0,0" VerticalAlignment="Top" Width="120" Loaded="Window_Loaded" TabIndex="0"/>
+        <Label Content="Cliente" HorizontalAlignment="Left" Margin="260,48,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cboCliente" HorizontalAlignment="Left" Margin="223,80,0,0" VerticalAlignment="Top" Width="120" TabIndex="1" Loaded="Window_Loaded"/>
+        <Button x:Name="btnBuscarCarro" Content="Buscar Carros" HorizontalAlignment="Left" Margin="245,119,0,0" VerticalAlignment="Top" Click="btnBuscarCarro_Click"/>
+        <Label Content="Carros" HorizontalAlignment="Left" Margin="74,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.954,2.848" FontSize="11" Width="100" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
+        <ComboBox x:Name="cboCarros" HorizontalAlignment="Left" Margin="223,166,0,0" VerticalAlignment="Top" Width="124" TabIndex="2"/>
+        <Label Content="Selecione os serviços realilzados" HorizontalAlignment="Left" Margin="52,227,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.954,2.848" FontSize="11" Width="172" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
+        <ComboBox x:Name="cboServicos" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Center" Width="174" Loaded="Window_Loaded" TabIndex="2"/>
+        <Button x:Name="btnAdicionar" Content="Adicionar" HorizontalAlignment="Left" Margin="267,0,0,0" VerticalAlignment="Center" Click="btnAdicionar_Click"/>
+        <DataGrid x:Name="dtaServicos" Margin="32,308,0,149" Width="328" AutoGenerateColumns="False" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Top">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Nome}" Header="Nome" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Descricao}" Header="Descrição" Width="1*"/>
+                <DataGridTextColumn Binding="{Binding Valor}" Header="Valor" Width="1*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="lblTotal" Content="Total: " HorizontalAlignment="Left" Margin="210,421,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.965,-1.18"/>
+        <Button x:Name="brnCadastrar" Content="Cadastrar" HorizontalAlignment="Center" Margin="0,514,0,0" VerticalAlignment="Top" Click="brnCadastrar_Click"/>
+        <DatePicker x:Name="dataSaida" HorizontalAlignment="Left" Margin="241,468,0,0" VerticalAlignment="Top"/>
+        <Label Content="Data de finalização do conserto: " HorizontalAlignment="Left" Margin="32,465,0,0" VerticalAlignment="Top" Width="183" Height="30"/>
+
+    </Grid>
+</Window>
