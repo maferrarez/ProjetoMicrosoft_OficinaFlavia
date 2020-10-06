@@ -18,7 +18,8 @@ namespace Oficina_Flavia.Migrations
                     Cpf = table.Column<string>(nullable: true),
                     Telefone = table.Column<int>(nullable: false),
                     Endereco = table.Column<string>(nullable: true),
-                    Email = table.Column<string>(nullable: true)
+                    Email = table.Column<string>(nullable: true),
+                    Sobrenome = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

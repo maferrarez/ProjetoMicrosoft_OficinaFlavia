@@ -5,28 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Oficina_Flavia.Views"
         mc:Ignorable="d"
-         Title="Oficina da Flavia - Cliente" Height="383" Width="326" WindowStartupLocation="CenterScreen" Background="#FF082321">
+         Title="Oficina da Flavia - Cliente" Height="410" Width="326" WindowStartupLocation="CenterScreen" Background="#FF082321">
     <Grid>
         <Label Content="Clientes" HorizontalAlignment="Left" Margin="106,10,0,0" VerticalAlignment="Top" FontFamily="Century725 Cn BT" FontSize="26" Foreground="White"/>
         <Label Content="Nome" HorizontalAlignment="Left" Margin="25,99,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="100,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="0" FontFamily="Segoe UI Semilight"/>
-        <Label Content="CPF" HorizontalAlignment="Left" Margin="25,130,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
-        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Margin="100,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="1" FontFamily="Segoe UI Semilight"/>
-        <Label Content="Endereço" HorizontalAlignment="Left" Margin="25,161,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
-        <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Margin="100,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="2" FontFamily="Segoe UI Semilight"/>
-        <Label Content="Telefone" HorizontalAlignment="Left" Margin="25,192,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
-        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Margin="100,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="3" FontFamily="Segoe UI Semilight"/>
-        <Label Content="E-mail" HorizontalAlignment="Left" Margin="25,223,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="100,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="4" FontFamily="Segoe UI Semilight"/>
+        <Label Content="CPF" HorizontalAlignment="Left" Margin="25,166,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Margin="100,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="1" FontFamily="Segoe UI Semilight"/>
+        <Label Content="Endereço" HorizontalAlignment="Left" Margin="25,197,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Margin="100,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="2" FontFamily="Segoe UI Semilight"/>
+        <Label Content="Telefone" HorizontalAlignment="Left" Margin="25,228,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Margin="100,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="3" FontFamily="Segoe UI Semilight"/>
+        <Label Content="E-mail" HorizontalAlignment="Left" Margin="25,259,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="100,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="4" FontFamily="Segoe UI Semilight"/>
         <Label Content="ID" HorizontalAlignment="Left" Margin="25,65,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
         <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="100,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
-        <Label Content="Criado Em" HorizontalAlignment="Left" Margin="25,254,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
-        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Margin="100,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="4" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
-        <Button x:Name="btnCadastrarCliente" Padding="0,0,0,0" Content="Cadastrar" HorizontalAlignment="Left" Margin="227,307,0,0" Click="btnCadastrarCliente_Click" FontFamily="Georgia" FontSize="13" Height="17" VerticalAlignment="Top" />
-        <Button x:Name="btnBuscarCliente" Padding="0,0,0,0" Content="Buscar" HorizontalAlignment="Left" Margin="179,307,0,0" Click="btnBuscarCliente_Click" FontFamily="Georgia" FontSize="13" Height="17" VerticalAlignment="Top"/>
-        <Button x:Name="btnLimparCliente" Padding="0,0,0,0" Content="Limpar" Margin="125,307,0,0" Click="btnLimparCliente_Click" FontFamily="Georgia" FontSize="13" HorizontalAlignment="Left" Width="44" Height="17" VerticalAlignment="Top"/>
-        <Button x:Name="btnAlterarCliente" Padding="0,0,0,0" Content="Alterar" HorizontalAlignment="Left" Margin="78,307,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnAlterarCliente_Click" FontFamily="Georgia" FontSize="13"/>
-        <Button x:Name="btnRemoverCliente" Padding="0,0,0,0" Content="Remover" HorizontalAlignment="Left" Margin="15,307,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnRemoverCliente_Click" FontFamily="Georgia" FontSize="13"/>
+        <Label Content="Criado Em" HorizontalAlignment="Left" Margin="25,290,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Margin="100,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="4" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
+        <Button x:Name="btnCadastrarCliente" Padding="0,0,0,0" Content="Cadastrar" HorizontalAlignment="Left" Margin="237,329,0,0" Click="btnCadastrarCliente_Click" FontFamily="Georgia" FontSize="13" Height="17" VerticalAlignment="Top" />
+        <Button x:Name="btnBuscarCliente" Padding="0,0,0,0" Content="Buscar" HorizontalAlignment="Left" Margin="189,329,0,0" Click="btnBuscarCliente_Click" FontFamily="Georgia" FontSize="13" Height="17" VerticalAlignment="Top"/>
+        <Button x:Name="btnLimparCliente" Padding="0,0,0,0" Content="Limpar" Margin="135,329,0,0" Click="btnLimparCliente_Click" FontFamily="Georgia" FontSize="13" HorizontalAlignment="Left" Width="44" Height="17" VerticalAlignment="Top"/>
+        <Button x:Name="btnAlterarCliente" Padding="0,0,0,0" Content="Alterar" HorizontalAlignment="Left" Margin="88,329,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnAlterarCliente_Click" FontFamily="Georgia" FontSize="13"/>
+        <Button x:Name="btnRemoverCliente" Padding="0,0,0,0" Content="Remover" HorizontalAlignment="Left" Margin="25,329,0,0" VerticalAlignment="Top" IsEnabled="False" Click="btnRemoverCliente_Click" FontFamily="Georgia" FontSize="13"/>
+        <Label Content="Sobrenome" HorizontalAlignment="Left" Margin="25,135,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
+        <TextBox x:Name="txtSobrenome" HorizontalAlignment="Left" Margin="100,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TabIndex="0" FontFamily="Segoe UI Semilight"/>
 
     </Grid>
 </Window>

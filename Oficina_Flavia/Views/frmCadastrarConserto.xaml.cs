@@ -84,23 +84,6 @@ namespace Oficina_Flavia.Views
             dtaServicos.ItemsSource = servicos;
             dtaServicos.Items.Refresh();
         }
-        private void DespopularConserto(Servico servico)
-        {
-            conserto.ItensServicos.Remove(servico);
-        }
-
-        private void DesopularDataGrid(Servico servico)
-        {
-            dynamic item = new
-            {
-                Nome = servico.Nome,
-                Descricao = servico.Descricao,
-                Valor = servico.Valor.ToString("C2")
-            };
-            servicos.Remove(item);
-            dtaServicos.ItemsSource = servicos;
-            dtaServicos.Items.Refresh();
-        }
 
         private void brnCadastrar_Click(object sender, RoutedEventArgs e)
         {
@@ -163,23 +146,6 @@ namespace Oficina_Flavia.Views
         private void btnLimparConserto_Click(object sender, RoutedEventArgs e)
         {
             Limpar();
-        }
-
-        private void btnExcluirServico_Click(object sender, RoutedEventArgs e)
-        {
-            if (cboServicos.SelectedValue != null)
-            {
-                int idS = (int)cboServicos.SelectedValue;
-                Servico servico = ServicoDAO.BuscarPorId(idS);
-                DesopularDataGrid(servico);
-                total -= servico.Valor;
-                lblTotal.Content = $"Total: {total:C2}";
-                conserto.ValorTotal = total;
-            }
-            else
-            {
-                MessageBox.Show("Selecione um serviço.", "Oficina Flavia", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
         }
     }
 }

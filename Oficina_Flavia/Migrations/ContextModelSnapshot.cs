@@ -67,6 +67,9 @@ namespace Oficina_Flavia.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Sobrenome")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Telefone")
                         .HasColumnType("int");
 

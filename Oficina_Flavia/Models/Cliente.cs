@@ -9,5 +9,6 @@ namespace Oficina_Flavia.Models
     class Cliente : Pessoa
     {
         public string Email { get; set; }
+        public string Sobrenome { get; set; }
     }
 }

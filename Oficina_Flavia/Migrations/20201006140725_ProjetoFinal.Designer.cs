@@ -10,7 +10,7 @@ using Oficina_Flavia.Models;
 namespace Oficina_Flavia.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20201005033350_ProjetoFinal")]
+    [Migration("20201006140725_ProjetoFinal")]
     partial class ProjetoFinal
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,6 +67,9 @@ namespace Oficina_Flavia.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sobrenome")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Telefone")

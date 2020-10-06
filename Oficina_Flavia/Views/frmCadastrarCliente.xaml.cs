@@ -34,6 +34,7 @@ namespace Oficina_Flavia.Views
                 cliente = new Cliente()
                 {
                     Nome = txtNome.Text,
+                    Sobrenome = txtSobrenome.Text,
                     Cpf = txtCpf.Text,
                     Endereco = txtEndereco.Text,
                     Email = txtEmail.Text,
@@ -59,6 +60,7 @@ namespace Oficina_Flavia.Views
         {
             txtId.Clear();
             txtNome.Clear();
+            txtSobrenome.Clear();
             txtCpf.Clear();
             txtEndereco.Clear();
             txtTelefone.Clear();
@@ -72,7 +74,7 @@ namespace Oficina_Flavia.Views
 
         public bool ConfirmTxt()
         {
-            if (!string.IsNullOrWhiteSpace(txtNome.Text) && !string.IsNullOrWhiteSpace(txtEndereco.Text) && !string.IsNullOrWhiteSpace(txtEmail.Text)
+            if (!string.IsNullOrWhiteSpace(txtNome.Text) && !string.IsNullOrWhiteSpace(txtSobrenome.Text) && !string.IsNullOrWhiteSpace(txtEndereco.Text) && !string.IsNullOrWhiteSpace(txtEmail.Text)
                 && !string.IsNullOrWhiteSpace(txtCpf.Text) && !string.IsNullOrWhiteSpace(txtTelefone.Text))
             {
                 return true;
@@ -82,13 +84,11 @@ namespace Oficina_Flavia.Views
 
         private void btnBuscarCliente_Click(object sender, RoutedEventArgs e)
         {
-            cliente = ClienteDAO.BuscarPorNome(txtNome.Text);
-            if (cliente == null)
-            {
                 cliente = ClienteDAO.BuscarPorCpf(txtCpf.Text);
                 if (cliente != null)
                 {
                     txtNome.Text = cliente.Nome;
+                    txtSobrenome.Text = cliente.Sobrenome;
                     txtCpf.Text = cliente.Cpf;
                     txtEndereco.Text = cliente.Endereco;
                     txtTelefone.Text = cliente.Telefone.ToString();
@@ -99,11 +99,10 @@ namespace Oficina_Flavia.Views
                     btnRemoverCliente.IsEnabled = true;
 
                 }
-            }
-            else
-            {
-                MessageBox.Show("Cliente não encontrado.", "Oficina Flavia", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
+                else
+                {
+                    MessageBox.Show("Cliente não encontrado.", "Oficina Flavia", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
         }
 
         private void btnLimparCliente_Click(object sender, RoutedEventArgs e)
@@ -116,6 +115,7 @@ namespace Oficina_Flavia.Views
             if (cliente != null)
             {
                 cliente.Nome = txtNome.Text;
+                cliente.Sobrenome = txtSobrenome.Text;
                 cliente.Cpf = txtCpf.Text;
                 cliente.Endereco = txtEndereco.Text;
                 cliente.Email = txtEmail.Text;
