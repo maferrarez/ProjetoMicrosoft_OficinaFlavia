@@ -21,8 +21,8 @@
         </Menu>
         <Label Content="Oficina da Flávia" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" FontFamily="Century725 Cn BT" FontSize="41" Foreground="White"/>
         <TextBox HorizontalAlignment="Center" Margin="0,136,0,0" Text="Seja Bem-Vindo(a)!" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Background="{x:Null}" Foreground="White" FontFamily="GeoSlab703 Md BT" BorderBrush="{x:Null}"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,338,0,0" Text="Projeto desenvolvido por Marina e Willian
-                 V1.1 - 10/2020" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Background="{x:Null}" Foreground="White" FontFamily="GeoSlab703 Md BT" BorderBrush="{x:Null}" FontSize="10" HorizontalContentAlignment="Center"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,318,0,0" Text="Projeto desenvolvido por Marina e Willian
+                 V1.1 - 10/2020" TextWrapping="Wrap" Width="200" Background="{x:Null}" Foreground="White" FontFamily="GeoSlab703 Md BT" BorderBrush="{x:Null}" FontSize="10" HorizontalContentAlignment="Center" Height="26" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

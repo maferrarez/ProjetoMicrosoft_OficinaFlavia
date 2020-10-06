@@ -17,7 +17,7 @@
         <ComboBox x:Name="cboCarros" HorizontalAlignment="Left" Margin="224,197,0,0" VerticalAlignment="Top" Width="153" TabIndex="2"/>
         <Label Content="Selecione os serviços realilzados" HorizontalAlignment="Left" Margin="18,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.954,2.848" Width="199" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
         <ComboBox x:Name="cboServicos" HorizontalAlignment="Left" Margin="228,244,0,0" VerticalAlignment="Top" Width="149" Loaded="Window_Loaded" TabIndex="2"/>
-        <Button x:Name="btnAdicionar" Content="Adicionar" HorizontalAlignment="Left" Margin="273,283,0,0" VerticalAlignment="Top" Click="btnAdicionar_Click"/>
+        <Button x:Name="btnAdicionar" Content="Adicionar" HorizontalAlignment="Left" Margin="243,283,0,0" VerticalAlignment="Top" Click="btnAdicionar_Click"/>
         <DataGrid x:Name="dtaServicos" Margin="36,330,0,0" Width="328" AutoGenerateColumns="False" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Height="117" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Nome}" Header="Nome" Width="1*"/>
@@ -26,9 +26,11 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="lblTotal" Content="Total: " HorizontalAlignment="Left" Margin="200,452,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.965,-1.18" FontFamily="GeoSlab703 Md BT" Foreground="White" FontSize="13"/>
-        <Button x:Name="brnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="189,527,0,0" VerticalAlignment="Top" Click="brnCadastrar_Click" FontFamily="Georgia" FontSize="14"/>
         <DatePicker x:Name="dataSaida" HorizontalAlignment="Left" Margin="254,486,0,0" VerticalAlignment="Top"/>
         <Label Content="Data de finalização do conserto: " HorizontalAlignment="Left" Margin="36,483,0,0" VerticalAlignment="Top" Width="199" Height="30" Foreground="White" FontFamily="GeoSlab703 Md BT" FontSize="12"/>
+        <Button x:Name="btnLimparConserto" Content="Limpar" HorizontalAlignment="Left" Margin="136,537,0,0" VerticalAlignment="Top" TabIndex="7" FontFamily="Georgia" FontSize="14" Click="btnLimparConserto_Click"/>
+        <Button x:Name="brnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="236,537,0,0" VerticalAlignment="Top" Click="brnCadastrar_Click" FontFamily="Georgia" FontSize="14"/>
+        <Button x:Name="btnExcluirServico" Content="Deletar" HorizontalAlignment="Left" Margin="319,283,0,0" VerticalAlignment="Top" Click="btnExcluirServico_Click" />
 
     </Grid>
 </Window>

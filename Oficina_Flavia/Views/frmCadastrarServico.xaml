@@ -8,16 +8,16 @@
         Title="Oficina da Flavia - Serviços" Height="320" Width="300" WindowStartupLocation="CenterScreen" Padding="10,10,10,10" FontSize="16" FontStretch="Medium" VerticalContentAlignment="Top" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Background="#FF082321">
     <Grid>
         <Label Content="Serviços" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.479,0.609" FontFamily="Century751 No2 BT" FontSize="27" Foreground="White" Margin="95,14,0,0"/>
-        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="113,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" IsEnabled="False" Height="22" FontFamily="Segoe UI Semilight"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="113,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" IsEnabled="False" Height="22" FontFamily="Segoe UI Semilight" FontSize="12"/>
         <Label Content="ID: " HorizontalAlignment="Left" Margin="22,86,0,0" VerticalAlignment="Top" FontFamily="GeoSlab703 Md BT" FontSize="12" FontStretch="Normal" FontStyle="Normal" Foreground="White"/>
-        <Label Content="Nome:" HorizontalAlignment="Left" Margin="22,117,0,0" VerticalAlignment="Top" FontFamily="" FontSize="12" FontStretch="Normal" FontStyle="Normal" Foreground="White"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="113,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" TabIndex="0" Height="22" FontFamily="Segoe UI Semilight"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="22,117,0,0" VerticalAlignment="Top" FontFamily="GeoSlab703 Md BT" FontSize="12" FontStretch="Normal" FontStyle="Normal" Foreground="White"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="113,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" TabIndex="0" Height="22" FontFamily="Segoe UI Semilight" FontSize="12"/>
         <Label Content="Descrição:" HorizontalAlignment="Left" Margin="22,145,0,0" VerticalAlignment="Top" FontFamily="GeoSlab703 Md BT" FontSize="12" FontStretch="Normal" FontStyle="Normal" Foreground="White"/>
-        <TextBox x:Name="txtDescricao" HorizontalAlignment="Left" Margin="113,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" TabIndex="1" Height="22" FontFamily="Segoe UI Semilight"/>
+        <TextBox x:Name="txtDescricao" HorizontalAlignment="Left" Margin="113,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" TabIndex="1" Height="22" FontFamily="Segoe UI Semilight" FontSize="12"/>
         <Label Content="Valor:" HorizontalAlignment="Left" Margin="22,174,0,0" VerticalAlignment="Top" FontFamily="GeoSlab703 Md BT" FontSize="12" FontStretch="Normal" FontStyle="Normal" Foreground="White"/>
-        <TextBox x:Name="txtValor" HorizontalAlignment="Left" Margin="113,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" TabIndex="2" Height="22" FontFamily="Segoe UI Semilight"/>
+        <TextBox x:Name="txtValor" HorizontalAlignment="Left" Margin="113,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" TabIndex="2" Height="22" FontFamily="Segoe UI Semilight" FontSize="12"/>
         <Label Content="Criado Em" HorizontalAlignment="Left" Margin="22,203,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT" FontSize="12"/>
-        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Margin="113,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TabIndex="4" IsEnabled="False" FontFamily="Segoe UI Semilight" Height="23"/>
+        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Margin="113,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" TabIndex="4" IsEnabled="False" FontFamily="Segoe UI Semilight" Height="23" FontSize="12"/>
 
         <Button x:Name="btnCadastrarServico" Padding="0,0,0,0" Content="Cadastrar" HorizontalAlignment="Left"  FontFamily="Georgia" FontSize="13" Height="17" VerticalAlignment="Top" Margin="225,257,0,0" Click="btnCadastrarServico_Click" />
         <Button x:Name="btnBuscarServico" Padding="0,0,0,0" Content="Buscar" HorizontalAlignment="Left" FontFamily="Georgia" FontSize="13" VerticalAlignment="Top" Margin="178,257,0,0" Click="btnBuscarServico_Click"/>

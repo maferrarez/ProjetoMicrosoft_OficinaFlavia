@@ -14,7 +14,7 @@ namespace Oficina_Flavia.DAL
         public static Cliente BuscarPorId(int id) => _context.Clientes.FirstOrDefault(x => x.Id == id);
         public static bool Cadastrar(Cliente cliente)
         {
-            if (BuscarPorNome(cliente.Nome) == null)
+            if (BuscarPorCpf(cliente.Cpf) == null)
             {
                 _context.Clientes.Add(cliente);
                 _context.SaveChanges();

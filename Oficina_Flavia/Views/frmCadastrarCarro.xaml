@@ -9,16 +9,16 @@
     <Grid>
         <Label Content="Carro" HorizontalAlignment="Center" Margin="0,14,0,0" VerticalAlignment="Top" FontFamily="Century725 Cn BT" FontSize="26" Foreground="White"/>
         <Button x:Name="btnCadastrarCarro" Content="Cadastrar" HorizontalAlignment="Left" Margin="225,262,0,0" VerticalAlignment="Top" Click="btnCadastrarCarro_Click" TabIndex="5" FontFamily="Georgia" FontSize="13" />
-        <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Margin="99,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" TabIndex="0"/>
-        <TextBox x:Name="txtModelo" HorizontalAlignment="Left" Margin="99,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" TabIndex="3"/>
+        <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Margin="99,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" TabIndex="0" FontFamily="Segoe UI Semilight"/>
+        <TextBox x:Name="txtModelo" HorizontalAlignment="Left" Margin="99,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" TabIndex="3" FontFamily="Segoe UI Semilight"/>
         <Label Content="Placa" HorizontalAlignment="Left" Margin="19,144,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
         <Label Content="Dono" HorizontalAlignment="Left" Margin="19,102,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
         <Label Content="Modelo" HorizontalAlignment="Left" Margin="19,182,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
         <Label Content="ID" HorizontalAlignment="Left" Margin="19,62,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
         <Label Content="Criado em" HorizontalAlignment="Left" Margin="19,220,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
-        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="99,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" IsEnabled="False"/>
-        <ComboBox x:Name="cboCliente" HorizontalAlignment="Left" Margin="99,104,0,0" VerticalAlignment="Top" Width="179" TabIndex="1" Loaded="Window_Loaded"/>
-        <TextBox x:Name="txtCriadoEm" HorizontalAlignment="Left" Margin="99,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" IsEnabled="False"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="99,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
+        <ComboBox x:Name="cboCliente" HorizontalAlignment="Left" Margin="99,104,0,0" VerticalAlignment="Top" Width="171" TabIndex="1" Loaded="Window_Loaded" FontFamily="Segoe UI Semilight"/>
+        <TextBox x:Name="txtCriadoEm" HorizontalAlignment="Left" Margin="99,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
         <Button x:Name="btnBuscarCarro" Content="Buscar" HorizontalAlignment="Left" Margin="177,262,0,0" VerticalAlignment="Top" TabIndex="6" Click="btnBuscarCarro_Click" FontFamily="Georgia" FontSize="13" />
         <Button x:Name="btnLimparCarro" Content="Limpar" HorizontalAlignment="Center" Margin="0,262,0,0" VerticalAlignment="Top" TabIndex="7" Click="btnLimparCarro_Click" FontFamily="Georgia" FontSize="13"/>
         <Button x:Name="btnAlterarCarro" Content="Alterar" HorizontalAlignment="Left" Margin="77,262,0,0" VerticalAlignment="Top" TabIndex="8" Click="btnAlterarCarro_Click" FontFamily="Georgia" FontSize="13"/>

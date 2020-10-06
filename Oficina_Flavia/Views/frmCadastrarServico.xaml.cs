@@ -32,7 +32,10 @@ namespace Oficina_Flavia.Views
             txtNome.Clear();
             txtValor.Clear();
             txtNome.Focus();
+            txtDate.Clear();
             servico = new Servico();
+            btnAlterarServico.IsEnabled = false;
+            btnRemoverServico.IsEnabled = false;
         }
 
         private void btnRemoverServico_Click(object sender, RoutedEventArgs e)
