@@ -88,7 +88,7 @@ namespace Oficina_Flavia.Views
                 cliente = ClienteDAO.BuscarPorCpf(txtCpf.Text);
                 if (cliente != null)
                 {
-
+                    txtNome.Text = cliente.Nome;
                     txtCpf.Text = cliente.Cpf;
                     txtEndereco.Text = cliente.Endereco;
                     txtTelefone.Text = cliente.Telefone.ToString();
@@ -104,7 +104,6 @@ namespace Oficina_Flavia.Views
             {
                 MessageBox.Show("Cliente não encontrado.", "Oficina Flavia", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-
         }
 
         private void btnLimparCliente_Click(object sender, RoutedEventArgs e)

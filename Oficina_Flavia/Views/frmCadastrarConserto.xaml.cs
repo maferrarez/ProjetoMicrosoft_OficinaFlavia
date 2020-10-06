@@ -32,11 +32,11 @@ namespace Oficina_Flavia.Views
             cboServicos.ItemsSource = ServicoDAO.Listar();
             cboServicos.DisplayMemberPath = "Nome";
             cboServicos.SelectedValuePath = "Id";
-       
+
             cboFuncionario.ItemsSource = FuncionarioDAO.Listar();
             cboFuncionario.DisplayMemberPath = "Nome";
             cboFuncionario.SelectedValuePath = "Id";
-       
+
             cboCliente.ItemsSource = ClienteDAO.Listar();
             cboCliente.DisplayMemberPath = "Nome";
             cboCliente.SelectedValuePath = "Id";
@@ -45,13 +45,20 @@ namespace Oficina_Flavia.Views
 
         private void btnAdicionar_Click(object sender, RoutedEventArgs e)
         {
-            int idS = (int) cboServicos.SelectedValue;
-            Servico servico = ServicoDAO.BuscarPorId(idS);
-            PopularDataGrid(servico);
-            PopularConserto(servico);
-            total += servico.Valor;
-            lblTotal.Content = $"Total: {total:C2}";
-            conserto.ValorTotal = total;
+            if (cboServicos.SelectedValue != null)
+            {
+                int idS = (int)cboServicos.SelectedValue;
+                Servico servico = ServicoDAO.BuscarPorId(idS);
+                PopularDataGrid(servico);
+                PopularConserto(servico);
+                total += servico.Valor;
+                lblTotal.Content = $"Total: {total:C2}";
+                conserto.ValorTotal = total;
+            }
+            else
+            {
+                MessageBox.Show("Selecione um serviço.", "Oficina Flavia", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void PopularConserto(Servico servico)
@@ -80,30 +87,57 @@ namespace Oficina_Flavia.Views
 
         private void brnCadastrar_Click(object sender, RoutedEventArgs e)
         {
-            int idC = (int)cboCliente.SelectedValue;
-            Cliente cliente = ClienteDAO.BuscarPorId(idC);
-            int idF = (int)cboFuncionario.SelectedValue;
-            Funcionario funcionario = FuncionarioDAO.BuscarPorId(idF);
-            int idCr = (int)cboCarros.SelectedValue;
-            Carro carro = CarroDAO.BuscarPorId(idCr);
-            conserto.Cliente = cliente;
-            conserto.Funcionario = funcionario;
-            conserto.Carro = carro;
-            conserto.DataEntrada = DateTime.Now;
-            conserto.DataRetorno = dataSaida.SelectedDate.Value.Date;
-            ConsertoDAO.Cadastrar(conserto);
-            MessageBox.Show("Conserto cadastrado com sucesso!");
-            
+            if (cboServicos.SelectedValue != null && cboCliente.SelectedValue != null && cboCarros.SelectedValue != null && cboFuncionario.SelectedValue != null)
+            {
+                if (dataSaida.SelectedDate != null)
+                {
+                    int idC = (int)cboCliente.SelectedValue;
+                    int idF = (int)cboFuncionario.SelectedValue;
+                    int idcr = (int)cboCarros.SelectedValue;
+                    conserto.Cliente = ClienteDAO.BuscarPorId(idC);
+                    conserto.Funcionario = FuncionarioDAO.BuscarPorId(idF);
+                    conserto.DataRetorno = dataSaida.SelectedDate.Value.Date;
+                    conserto.Carro = CarroDAO.BuscarPorId(idcr);
+                    ConsertoDAO.Cadastrar(conserto);
+                    Limpar();
+                    MessageBox.Show("Conserto cadastrado com sucesso!", "Oficina Flavia", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Selecione uma data de retorno.", "Oficina Flavia", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione todos os campos.", "Oficina Flavia", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
-        
+
         private void btnBuscarCarro_Click(object sender, RoutedEventArgs e)
         {
-            int idC = (int)cboCliente.SelectedValue;
-            List<Carro> carros = CarroDAO.ListarPorCliente(idC); 
-            cboCarros.ItemsSource = carros;
-            cboServicos.DisplayMemberPath = "Placa";
-            cboServicos.SelectedValuePath = "Id";
+            if (cboCliente.SelectedValue != null)
+            {
+                int idC = (int)cboCliente.SelectedValue;
+                List<Carro> carros = CarroDAO.ListarPorCliente(idC);
+                cboCarros.ItemsSource = carros;
+                cboCarros.DisplayMemberPath = "Placa";
+                cboCarros.SelectedValuePath = "Id";
+            }
+            else
+            {
+                MessageBox.Show("Selecione um cliente.", "Oficina Flavia", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
 
+        public void Limpar()
+        {
+            servicos.Clear();
+            dtaServicos.Items.Refresh();
+            cboCarros.SelectedIndex = -1;
+            cboCarros.ItemsSource = null;
+            cboCliente.IsEnabled = true;
+            servicos = new List<dynamic>();
+            conserto = new Conserto();
         }
     }
 }

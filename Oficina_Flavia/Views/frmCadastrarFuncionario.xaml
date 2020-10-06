@@ -24,7 +24,7 @@
         <Label Content="Criado em" HorizontalAlignment="Left" Margin="17,255,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="GeoSlab703 Md BT"/>
         <TextBox x:Name="txtCriadoEm" HorizontalAlignment="Left" Margin="97,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" IsEnabled="False" FontFamily="Segoe UI Semilight"/>
         <Button x:Name="btnBuscarFuncionario" Content="Buscar" HorizontalAlignment="Left" Margin="178,300,0,0" VerticalAlignment="Top" Click="btnBuscarFuncionario_Click" TabIndex="6" FontFamily="Georgia" FontSize="13"/>
-        <Button x:Name="btnLimparFuncionario" Content="Limpar" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" Click="btnLimparFuncionario_Click" TabIndex="7" FontFamily="Georgia" FontSize="13"/>
+        <Button x:Name="btnLimparFuncionario" Content="Limpar" HorizontalAlignment="Left" Margin="127,300,0,0" VerticalAlignment="Top" Click="btnLimparFuncionario_Click" TabIndex="7" FontFamily="Georgia" FontSize="13"/>
         <Button x:Name="btnAlterarFuncionario" Content="Alterar" HorizontalAlignment="Left" Margin="77,300,0,0" VerticalAlignment="Top" Click="btnAlterarFuncionario_Click" TabIndex="8" FontFamily="Georgia" FontSize="13"/>
         <Button x:Name="btnRemoverFuncionario" Content="Remover" HorizontalAlignment="Left" Margin="17,300,0,0" VerticalAlignment="Top" Click="btnRemoverFuncionario_Click" TabIndex="9" FontFamily="Georgia" FontSize="13"/>
     </Grid>
